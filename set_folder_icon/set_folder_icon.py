@@ -7,7 +7,7 @@ def set_folder_icon(folder_path, icon_path):
     desktop_ini = os.path.join(folder_path, "desktop.ini")
 
     # Remove desktop.ini if already there
-    if os.path.exists(folder_path):
+    if os.path.exists(desktop_ini):
         os.remove(desktop_ini)
 
     # Write the configuration to the desktop.ini file
