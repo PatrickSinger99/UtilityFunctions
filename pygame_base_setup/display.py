@@ -57,6 +57,11 @@ class Display:
         # Reset screen
         screen.fill(black)
 
+        """SIMULATION DISPLAY"""
+
+        # Get current simulation state
+        sim_state = self.sim.get_state()
+
         """DEBUG DISPLAY"""
 
         # Display simulation infos
